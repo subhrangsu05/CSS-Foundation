@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.emoji {
+    font-size: 10rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.closed {
+    display: none;
+    cursor: pointer;
+}
+
+.open {
+    display: none;
+    cursor: pointer;
+}
+
+.active{
+    display: block;
+}
+.over{
+    text-shadow: 5px 5px 7px red;
+    text-decoration: underline;
+    font-size: 2vw;
+    margin-top: 1%;
+
+}

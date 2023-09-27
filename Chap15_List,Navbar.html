@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>navbar</title>
+        <style>
+            li{
+                float: left;
+            }
+            li a{
+                color:white;
+                /* display: block; */
+                text-decoration: none;
+                font-size: 150%;
+                display: block;
+                padding: 14px 16px;
+            }
+            ul{
+                list-style-type: none;
+                background-color: skyblue;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            li a:hover{
+                background-color: white;
+                color: red;
+                text-shadow: 3px 3px 5px black;
+            }
+            .search{
+                float: right;
+                margin: 1%;
+                border: 3px outset red;
+                border-radius: 5%;
+                padding: 0.2%;
+            }
+            .search:hover{
+                transform: scale(1.5);
+            }
+            button{
+                float: right;
+                margin: 1% 1% 0% 0%;
+                background-color: skyblue;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover{
+                transform: scale(1.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Career">Career</a></li>
+                <li><a href="Course">Course</a></li>
+                <li><a href="About">About</a></li>
+                <button>🔍</button>
+                <input type="search" class="search" placeholder="search in here...">
+           </ul>
+        </div> 
+        <div>
+        </div>
+    </body>
+</html>

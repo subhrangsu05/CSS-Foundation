@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>display</title>
+        <style>
+            li{
+                float: left;
+            }
+            li a{
+                color:white;
+                /* display: block; */
+                text-decoration: none;
+                font-size: 150%;
+                display: block;
+                padding: 14px 16px;
+            }
+            ul{
+                list-style-type: none;
+                background-color: skyblue;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            li a:hover{
+                background-color: white;
+                color: red;
+                text-shadow: 3px 3px 5px black;
+            }
+            .search{
+                float: right;
+                margin: 1%;
+                border: 3px outset red;
+                border-radius: 5%;
+                padding: 0.2%;
+            }
+            .search:hover{
+                transform: scale(1.5);
+            }
+            .magni{
+                float: right;
+                margin: 1% 1% 0% 0%;
+                background-color: skyblue;
+                border: none;
+                cursor: pointer;
+            }
+            .magni:hover{
+                transform: scale(1.5);
+            }
+            .table{overflow-x: auto;}
+            table{
+                border: 4px outset red;
+                margin: 1%;
+                padding: 1%;
+            }
+            th{
+                background-color: gray;
+                width: 1%;
+                height: auto;
+                padding: 1%;
+                font-size: 150%;
+                color: wheat;
+                border-bottom: 2px solid black;
+            }
+            tbody tr:nth-child(even){
+                background-color: skyblue;
+            }
+            td{
+                text-align: center;
+                padding: 0.5%;
+            }
+            tr:hover{
+                width:auto;
+                transform: scale(1.1);
+                text-align: center;
+                cursor: pointer;
+            }
+            .display{
+                display: none;
+            }
+            .next::after{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Career">Career</a></li>
+                <li><a href="Course">Course</a></li>
+                <li><a href="About">About</a></li>
+                <button class="magni">🔍</button>
+                <input type="search" class="search" placeholder="search in here...">
+           </ul>
+        </div> 
+        <div class="table">
+            <table>
+                <caption>Details</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone no</th>
+                        <th>Company</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subhrangsu Sinha</td>
+                        <td>6289452324</td>
+                        <td>Cognizant</td>
+                    </tr>
+                    <tr>
+                        <td>Aritra Kundu</td>
+                        <td>7585840035</td>
+                        <td>ECMT</td>
+                    </tr>
+                    <tr>
+                        <td>Niladri Sen</td>
+                        <td>8584071291</td>
+                        <td>TCS</td>
+                    </tr>
+                    <tr>
+                        <td>Sreyashee Mukherjee</td>
+                        <td>8981322664</td>
+                        <td>Guardain</td>
+                    </tr>
+                    <tr>
+                        <td>Tanmoy Roy</td>
+                        <td>8240648047</td>
+                        <td>TCS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><hr><br>
+        <button onclick="hi()">click Me</button>
+        <div id="data1" class="data" style="display: none;" >
+            <a href="java">java</a>
+            <a href="python">python</a>
+        </div>
+        <script>
+            function hi(){
+                alert("hi");
+                // document.getElementById('data1').style.display="block";
+                document.getElementsByClassName('data')[0].style.display="block";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+.hi1{
+    background-color: aqua;
+}
+/* checking comment */
+.cmnt{
+    /* background-color: navy; */
+    background-color: rgb(249, 4, 4);
+}
+h1.all{
+    border: 2px solid rgba(0,0,0,1);
+}
+h1.buttom{
+    border-bottom: 2px solid rgba(255,0,0,1);
+}
+h1.round{
+    border:2px solid rgba(62,100,50);
+    border-radius: 10px;
+}
+h1.left{
+    border-left:5px solid #2196F3;
+    background-color: rgb(4, 158, 248,0.2);
+}
+h1.dotted{
+    border-color:rgba(0,0,0,1);
+    border-style:dotted;
+    border-width:4px
+}
+h1.dash{
+    border-color: rgba(255,0,0,1);
+    border-style: dashed;
+    border-width:4px
+}
+h1.solid{
+    border-color: #2196F3;
+    border-style:solid
+    border-width:4px
+}
+h1.double{
+    border-color: blueviolet;
+    border-style: double;
+    border-width:4px
+}
+h1.groove{
+    border:4px groove black
+}
+h1.ridge{
+    border: 4px ridge black;
+}
+h1.inset{
+    border:4px inset black;
+}
+h1.outset{
+    border:4px outset black;
+}
+h1.none{
+    border:4px none black;
+}
+h1.hidden{
+    border: 4px hidden black;
+}
+h1.mix{
+    border-color:black;
+    border-style: dotted dashed solid outset;
+    border-width:2  px 5px
+}
